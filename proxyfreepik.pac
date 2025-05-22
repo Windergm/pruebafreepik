@@ -3,7 +3,7 @@ function FindProxyForURL(url, host) {
     if (
         dnsDomainIs(host, ".freepil.com") || 
         dnsDomainIs(host, ".freepik.es") ||
-        shExpMatch(host, "*.freepil.com") ||
+        shExpMatch(host, "*.freepik.com") ||
         shExpMatch(host, "*.freepik.es")
     ) {
         return "PROXY 102.129.178.6:4414"; // Proxy para los dominios especificados
